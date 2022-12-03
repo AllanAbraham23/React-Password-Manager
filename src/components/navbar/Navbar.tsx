@@ -32,28 +32,17 @@ const Navbar: FC = () => {
                     "md:gap-10 gap-3 items-end text-lg font-medium text-lightThemeBlack dark:text-[#939191] flex flex-col md:flex-row"
                 }
             >
-                <DarkModeToggler />
-                <a
-                    href={"https://github.com/rajdip-b/password-manager"}
-                    className={"hover:text-purple transition-all ease-out duration-300"}
-                >
-                    Give a star
-                </a>
+               
+                
+                
+                
                 <button
                     className={"hover:text-purple transition-all ease-out duration-300"}
                     onClick={toggleGeneratePasswordOverlay}
                 >
                     Generate password
                 </button>
-                <button
-                    onClick={toggleDropdown}
-                    className={"flex items-center gap-2 hover:text-purple transition-all ease-out duration-300"}
-                >
-                    <div>More</div>
-                    <div className={`${dropdown ? "rotate-180" : ""} transition-all ease-out-duration-300`}>
-                        <KeyboardArrowDown />
-                    </div>
-                </button>
+                
                 <Dropdown expanded={expanded} in={dropdown} onBlur={closeDropdown} />
             </div>
         </div>
